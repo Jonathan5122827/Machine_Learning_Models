@@ -9,6 +9,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn import svm
 from sklearn.model_selection import train_test_split
 
+
 dataset = pd.read_csv("cpdata.csv", index_col=False)
 X2 = dataset.iloc[:50, [0, 1, 2, 3]]
 X = dataset.iloc[:, [0, 1, 2, 3]].values
